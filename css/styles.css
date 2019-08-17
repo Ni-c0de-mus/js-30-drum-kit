@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --tomato-color: #ff433d;
+    --yellow-color: #ffb347;
+    --magenta-color: rgba(168, 2, 168, 0.897);
+    --lime-color: rgba(8, 248, 80, 0.932);
+    --light-orange: #ff6215;
+    --poppins: "Poppins", sans-serif;
+    --bungee: "Bungee", cursive;
+    --lobster: "Lobster", cursive;
+    --pacifico: "Pacifico", cursive;
+}
+
+html {
+    font-size: 10px;
+    background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+    background-size: cover;
+}
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: var(--poppins);
+    }
+
+    .keys {
+        display: flex;
+        flex: 1;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .key {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: .4rem solid black;
+        border-radius: .5rem;
+        margin: 1rem;
+        font-size: 1rem;
+        padding: 1rem 5rem;
+        transition: all .07ms ease;
+        width: 10rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: rgba(0,0,0,.4);
+        text-shadow: 0 0 .5rem black;
+
+    }
+
+    .playing {
+        transform: scale(1.1);
+        border-color: var(--tomato-color);
+        box-shadow: 0 0 #ffb347;
+    }
+
+    kbd {
+        display: block;
+        font-size: 4rem;
+        color: var(--yellow-color);
+    }
+
+    .sound {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        color: var(--magenta-color);
+    }
