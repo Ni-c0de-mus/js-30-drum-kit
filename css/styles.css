@@ -51,7 +51,7 @@ html {
         margin: 1rem;
         font-size: 1rem;
         padding: 1rem 5rem;
-        transition: all .07ms ease;
+        transition: all 1.07ms ease;
         width: 10rem;
         text-align: center;
         align-items: center;
@@ -65,7 +65,7 @@ html {
     .playing {
         transform: scale(1.1);
         border-color: var(--tomato-color);
-        box-shadow: 0 0 #ffb347;
+        box-shadow: 0 0 10px #ffb347;
     }
 
     kbd {
